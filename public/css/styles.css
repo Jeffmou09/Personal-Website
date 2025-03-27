@@ -1,0 +1,338 @@
+/* Custom Fonts */
+@font-face {
+    font-family: 'CyGrotesk Grand';
+    src: url('../fonts/font 1/CyGroteskGrand-Heavy.woff2') format('woff2'),
+         url('../fonts/font 1/CyGroteskGrand-Heavy.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina Regular';
+    src: url('../fonts/font 2/NeueMachina-Regular.woff2') format('woff2'),
+         url('../fonts/font 2/NeueMachina-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Neue Machina Ultrabold';
+    src: url('../fonts/font 2/NeueMachina-Ultrabold.woff2') format('woff2'),
+         url('../fonts/font 2/NeueMachina-Ultrabold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* Global Body Styles */
+body {
+    background-image: url('../images/Home.svg');
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    font-family: 'CyGrotesk Grand', sans-serif;
+    padding-top: 80px;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.nav-tabs .nav-link {
+    color: white;
+    margin: 0 15px;
+    padding: 10px 15px;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link:active,
+.nav-tabs .nav-link:focus {
+    background-color: transparent !important;
+    color: #C0F622 !important;
+    border: none !important;
+    outline: none !important;
+}
+
+/* Home Section Styles */
+.hi-there {
+    padding-top: 100px;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 200px;
+    margin-bottom: 40px;
+    color: #C0F622;
+    font-family: 'CyGrotesk Grand', sans-serif;
+}
+
+.name {
+    font-size: 120px;
+    color: white;
+    font-family: 'Neue Machina Ultrabold', sans-serif;
+}
+
+.job {
+    font-size: 36px;
+    color: #C0F622;
+    padding-bottom: 40px;
+    font-family: 'Neue Machina Ultrabold', sans-serif;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'CyGrotesk Grand', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.contact-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Section Styles */
+.section-title {
+    font-size: 60px;
+    color: white ;
+    font-family: 'Neue Machina Ultrabold', sans-serif;
+    margin-bottom: 30px;
+}
+
+/* About Section Styles */
+.about-section {
+    margin-top: 300px;
+    padding-right: 70px;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.about-image-container {
+    padding: 0;
+}
+
+.about-image {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.about-btn {
+    margin-top: 100px;
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'CyGrotesk Grand', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.about-description {
+    font-family: 'Neue Machina Regular', sans-serif;
+    color: white;
+    font-size: 28.5px;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.about-highlight {
+    color: #C0F622;
+}
+
+.skills-title {
+    font-family: 'CyGrotesk Grand', sans-serif;
+    font-size: 36px;
+    color: #C0F622;
+    margin-bottom: 30px;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.skill-tag {
+    background-color: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-family: 'CyGrotesk Grand', sans-serif;
+    font-size: 16px;
+}
+
+/* Experience Section Styles */
+.experience-section {
+    background-color: black;
+    color: white;
+    padding: 0 70px;
+    padding-top: 50px;
+    min-height: 90vh;
+}
+
+.experience-intro {
+    font-family: 'Neue Machina Regular', sans-serif;
+    font-size: 28.5px;
+    padding-right: 60px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.experience-timeline {
+    padding-top: 100px;
+}
+
+.experience-timeline .timeline-center {
+    position: relative;
+    height: 650px;
+}
+
+.experience-timeline .timeline-line {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: white;
+    transform: translateX(-50%);
+}
+
+.experience-timeline .timeline-dot {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #C0F622;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.experience-timeline .timeline-dot:first-child {
+    top: 0;
+}
+
+.experience-timeline .timeline-dot:last-child {
+    top: 52%;
+}
+
+.timeline-left .timeline-content {
+    font-family: 'Neue Machina Regular', sans-serif;
+    font-size: 22.5px;
+    padding-bottom: 290px;
+    text-align: right;
+}
+.timeline-right .timeline-content {
+    padding-bottom: 20px;
+}
+.timeline-right h3 {
+    color: #C0F622;
+    padding-bottom: 20px;
+}
+
+.timeline-right p {
+    font-family: 'Neue Machina Regular', sans-serif;
+    font-size: 22.5px;
+}
+
+.experience-image {
+    max-width: 80%;
+    height: auto;
+    transform: translateY(-100px);
+}
+
+/* Portofolio Section Styles */
+.portfolio-section {
+    background-color: black;
+    color: white;
+    padding: 0 70px;
+    padding-top: 30px;
+    min-height: 100vh;
+}
+
+.portfolio-header {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+
+.portfolio-tag {
+    margin-bottom: 50px;
+    display: inline-block;
+    padding: 10px 40px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    font-family: 'CyGrotesk Grand', sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.portfolio-title {
+    font-size: 48px;
+    margin-bottom: 30px;
+}
+
+.portfolio-card {
+    background-color: #1a1a1a;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: scale(1.05);
+}
+
+.portfolio-screenshot img {
+    width: 100%;
+    height: auto;
+}
+
+.portfolio-details {
+    padding: 20px;
+}
+
+.portfolio-details h3 {
+    color: #C0F622; /* Warna hijau neon dari design */
+    margin-bottom: 15px;
+}
+
+.portfolio-details p {
+    color: #888;
+}
